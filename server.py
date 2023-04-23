@@ -16,7 +16,7 @@ PORT = 5050
 IP = socket.gethostbyname(socket.gethostname())
 
 # binding IP address and port to be defined for our socket
-ADDR = (PORT, IP)
+ADDR = (IP, PORT)
 
 FORMAT = 'utf-8'
 
@@ -84,7 +84,7 @@ def start():
         thread.start()
 
         # print the number of active connections
-        print(f"f[ACTIVE CONNECTIONS] {threading.active_count() -1}")
+        print(f"[ACTIVE CONNECTIONS] {threading.active_count() -1}")
 
 
 print("[STARTING] Server is starting...")
