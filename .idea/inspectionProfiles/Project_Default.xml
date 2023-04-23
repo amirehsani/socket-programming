@@ -1,0 +1,94 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="59" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="6">
+            <item index="0" class="java.lang.String" itemvalue="psycopg2" />
+            <item index="1" class="java.lang.String" itemvalue="ipdb" />
+            <item index="2" class="java.lang.String" itemvalue="django-stubs" />
+            <item index="3" class="java.lang.String" itemvalue="ipython" />
+            <item index="4" class="java.lang.String" itemvalue="djangorestframework-stubs" />
+            <item index="5" class="java.lang.String" itemvalue="decouple" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E251" />
+          <option value="E711" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N814" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="id" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="app1.models.Advocate.object" />
+          <option value="app1.models.Advocate.*" />
+          <option value="comments.models.AbstractComment.objects" />
+          <option value="Online_Store.Product.models.AbstractComment.is_valid" />
+          <option value="Online_Store.Product.models.AbstractComment.data" />
+          <option value="Online_Store.Product.models.AbstractComment.objects" />
+          <option value="rest_framework.request.data" />
+          <option value="django.db.models.fields.related.OneToOneField.username" />
+          <option value="django.db.models.fields.related.ForeignKey.register_number" />
+          <option value="comment.serializers.HotelCommentSerializer.*" />
+          <option value="comment.serializers.HotelRoomCommentSerializer.as_view" />
+          <option value="residence.models.HotelRoom.*" />
+          <option value="comment.models.HotelComment.*" />
+          <option value="residence.models.Residential.objects" />
+          <option value="comment.models.ResidentialComment.objects" />
+          <option value="comment.models.AirlineComment.objects" />
+          <option value="comment.models.AirportComment.objects" />
+          <option value="comment.models.HotelRoomComment.objects" />
+          <option value="rate.models.HotelRoomRate.objects" />
+          <option value="rate.models.ResidentialRate.objects" />
+          <option value="rate.models.AirlineRate.objects" />
+          <option value="rate.models.HotelRate.objects" />
+          <option value="users.models.Profile.objects" />
+          <option value="reservation.models.HotelRoomReservation.objects" />
+          <option value="reservation.models.ResidentialReservation.objects" />
+          <option value="reservation.models.FlightTicketReservation.obejcts" />
+          <option value="residence.models.Hotel.*" />
+          <option value="residence.models.ResidentialCategory.*" />
+          <option value="exchange.models.CurrencyExchangeRate.*" />
+          <option value="django.db.models.fields.CharField.*" />
+          <option value="django.db.models.fields.related.ForeignKey.*" />
+          <option value="cart.models.UserCart.*" />
+          <option value="gallery.models.HotelRoomGallery.*" />
+          <option value="gallery.models.AirportGallery.*" />
+          <option value="gallery.models.ResidentialGallery.*" />
+          <option value="wishlist.urls.urlpatterns" />
+          <option value="wishlist.views.self" />
+          <option value="abstract.redis.Redis" />
+          <option value="socialmedia.blog.models.Product.objects" />
+          <option value="int.now" />
+          <option value="stripe.error" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
