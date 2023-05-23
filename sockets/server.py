@@ -15,7 +15,7 @@ PORT = 5050
 # automatically get local IP address
 IP = socket.gethostbyname(socket.gethostname())
 
-# binding IP address and port to be defined for our socket
+# binding IP address and port to be defined for our sockets
 ADDR = (IP, PORT)
 
 FORMAT = 'utf-8'
@@ -26,11 +26,11 @@ Avoiding this might cause problems when the very same client is establishing a n
 """
 DISCONNECT_MESSAGE = "!DISCONNECT"
 
-# creating a new socket
-# AF_NET = type of socket , SOCK_STREAM = utilizing the socket to support data streams
+# creating a new sockets
+# AF_NET = type of sockets , SOCK_STREAM = utilizing the sockets to support data streams
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# binding our socket with PORT and IP
+# binding our sockets with PORT and IP
 server.bind(ADDR)
 
 
@@ -44,7 +44,7 @@ def handle_client(conn, addr):
     while connected:
 
         # this is a blocking line of code, meaning it will not be passed until a message (msg) is received form clients
-        # messaging protocols define how many bytes of data our server socket should expect
+        # messaging protocols define how many bytes of data our server sockets should expect
         msg_length = conn.recv(HEADER).decode(FORMAT)
 
         msg_length = int(msg_length)

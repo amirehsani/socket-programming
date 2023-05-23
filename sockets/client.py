@@ -8,7 +8,7 @@ DISCONNECT_MESSAGE = "!DISCONNECT"
 IP = socket.gethostbyname(socket.gethostname())
 ADDR = (IP, PORT)
 
-# creating the client side of the socket
+# creating the client side of the sockets
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(ADDR)
 
@@ -23,5 +23,18 @@ def send(msg):
     print(client.recv(2048).decode(FORMAT))
 
 
-send("Hello World!")
-send(DISCONNECT_MESSAGE)
+while True:
+    # packet = input()
+    # send(DISCONNECT_MESSAGE) if str(packet) == 'disconnect' else send(packet)
+    packet = input()
+
+    if str(packet) == 'disconnect':
+        send(DISCONNECT_MESSAGE)
+        break
+
+    else:
+        send(packet)
+
+
+# send("Hello World!")
+# send(DISCONNECT_MESSAGE)
