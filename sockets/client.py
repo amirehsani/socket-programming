@@ -24,17 +24,12 @@ def send(msg):
 
 
 while True:
-    # packet = input()
-    # send(DISCONNECT_MESSAGE) if str(packet) == 'disconnect' else send(packet)
+
     packet = input()
 
-    if str(packet) == 'disconnect':
-        send(DISCONNECT_MESSAGE)
-        break
-
-    else:
+    if str(packet) != 'disconnect':
         send(packet)
 
-
-# send("Hello World!")
-# send(DISCONNECT_MESSAGE)
+    else:
+        send(DISCONNECT_MESSAGE)
+        break
